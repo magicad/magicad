@@ -1,0 +1,265 @@
+@font-face { font-family: TextBold; src: url('../fonts/PFDinTextCondPro-Bold.ttf'); }
+@font-face { font-family: TextRegular; src: url('../fonts/PFDinTextCondPro-Regular.ttf'); }
+
+body{
+    font-family: TextRegular;
+}
+
+.navbar-default {
+	background-color: white;
+  padding: 12px;
+}
+
+.navbar{
+	font-family: TextRegular;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a{
+	color: pink;
+	background-color: white;
+}
+
+.navbar-nav li{
+    font-size: 20px;
+}
+
+.contactform:focus{
+    background-color: white;
+}
+
+.intro{
+    background-color: #262626;
+    padding-bottom: 16px;
+}
+
+.intro h2{
+  color: #dcdcdc;
+}
+
+.portfolio-img img{
+    width: 100%;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.projects p{
+    float: left;
+}
+
+.contactform input{
+    border-bottom: 1px solid white ;
+    background: 0 0;
+    box-shadow: none;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+}
+
+.contactform textarea{
+    border-bottom: 1px solid white ;
+    background: 0 0;
+    box-shadow: none;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+}
+
+.contactform{
+    margin-bottom: 96px;
+    margin-top: 43px;
+}
+
+.design-services{
+    width: 100%;
+}
+
+.footer{
+    background-color: #262626;
+}
+
+.title-services h4{
+    color: #262626;
+    text-transform: uppercase;
+    font-size: 31px;
+}
+
+.title-services{
+    padding-top: 36px;
+    padding-bottom: 65px;
+}
+
+.title-contact{
+    padding-top: 36px;
+    padding-bottom: 27px;
+}
+
+.title-contact h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 31px;
+}
+
+.services {
+    margin-bottom: 77px;
+}
+
+.linkedin, .behance{
+    margin-right: 25px;
+}
+
+.link-contact-me{
+    margin-bottom: 40px;
+}
+
+.modal-dialog{
+  z-index: 99999;
+  width: 70%;
+  margin: 0 auto !important;
+}
+
+.modal-body img{
+  width: 100%;
+  text-align: center;
+}
+
+.view.hover{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.animate-show{
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: visibility 1s 0s, opacity 1s linear;
+}
+
+.animate-hide{
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  border: 0 none !important;
+  transition: visibility 0s 1s, opacity 1s linear, width 1s linear;
+}
+
+.main-intro{
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 47px;
+}
+
+.main-intro h4{
+  padding-top: 29px;
+  line-height: 23px;
+}
+
+.contact-mail p{
+  color: white;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.btn-live{
+  background-color: #e20074;
+  border-color: #e20074;
+  padding: 10px 49px;
+  margin-bottom: 18px;
+  border-radius: 0px;
+}
+
+.btn-live:hover, .btn-live:active{
+  background-color: #e20074;
+  border-color: #e20074;
+}
+
+.btn-comingsoon{
+  background-color: #9197A6;
+  border-color: #9197A6;
+  padding: 10px 49px;
+  border-radius: 0px;
+  margin-bottom: 18px;
+}
+
+.btn-comingsoon:hover, .btn-comingsoon:active, .btn-comingsoon:focus{
+  background-color: #9197A6;
+  border-color: #9197A6;
+}
+
+.button-middle{
+  text-align: center;
+}
+
+.navbar-brand{
+  line-height: 0;
+  float: none;
+}
+
+
+
+
+
+@media (max-width: 1200px){
+  .intro-text h2{
+    font-size: 24px;
+  }
+  .intro{
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 990px){
+  .intro-text h2{
+    font-size: 17px;
+  }
+  .intro{
+    padding-bottom: 16px;
+  }
+}
+
+
+@media (max-width: 1160px){
+  .cover-title h2{
+     font-size: 28px
+  }
+  .cover-title{
+    top: 33%;
+  }
+}
+
+@media all and (max-width: 768px){
+  .img-me{
+    text-align: center;
+  }
+}
+
+@media screen and (max-device-width: 380px){
+  .modal-dialog{
+    width: 100%;
+  }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width: 1200px){
+  *::-ms-backdrop, .intro{
+    padding-bottom: 12px;
+  }
+  .intro{
+    padding-bottom: 12px;
+  }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width: 990px){
+  *::-ms-backdrop, .intro{
+    padding-bottom: 10px;
+  }
+  .intro {
+    padding-bottom: 10px;
+  }
+}
