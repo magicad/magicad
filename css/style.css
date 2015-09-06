@@ -167,6 +167,10 @@ body{
   font-size: 20px;
 }
 
+.contact-mail a{
+  color: white;
+}
+
 .btn-live{
   background-color: #e20074;
   border-color: #e20074;
