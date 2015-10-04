@@ -35,6 +35,10 @@ $(document).ready(function(){
   $(".navbar-nav a").click(function(e){
     e.preventDefault();
     var klass = $(this).attr("data-type");
+    $(".navbar a").each(function(){
+      $(this).removeClass("active");
+    });
+    $(this).addClass("active");
     $(".view.hover").each(function(){
       if($(this).hasClass(klass) || klass == "all"){
         $(this).removeClass("animate-hide").addClass("animate-show");
@@ -43,4 +47,15 @@ $(document).ready(function(){
       }
     });
   });
+
+  setInterval(function(){
+    var active = document.querySelector(".slide.active");
+    active.className = active.className.replace(" active", "")
+    var next = active.nextElementSibling;
+    if(!next)
+      next = document.querySelector(".slide");
+    next.className += " active";
+  }, 5000);
+  
+
 });
